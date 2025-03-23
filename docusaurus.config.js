@@ -2,7 +2,7 @@ module.exports = {
   title: 'My Portfolio',
   tagline: 'Simple User Guides for Everyday Products',
   url: 'https://kanthe94.github.io',
-  baseUrl: '/portfolio/',
+  baseUrl: '/my-portfolio/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
