@@ -16,12 +16,12 @@ module.exports = {
         src: 'img/logo.svg',
       },
       items: [
-        {
-          to: 'docs/',
-          activeBasePath: 'docs',
-          label: 'Guides',
-          position: 'left',
-        },
+        // {
+        //   to: 'docs/',
+        //   activeBasePath: 'docs',
+        //   label: 'Guides',
+        //   position: 'left',
+        // },
         {
           href: 'https://github.com/kanthe94/portfolio',
           label: 'GitHub',
