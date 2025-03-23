@@ -7,7 +7,7 @@ module.exports = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'kanthe94', // GitHub username
-  projectName: 'portfolio', // GitHub repo name
+  projectName: 'my-portfolio', // GitHub repo name
   themeConfig: {
     navbar: {
       title: 'My Portfolio',
@@ -23,7 +23,7 @@ module.exports = {
         //   position: 'left',
         // },
         {
-          href: 'https://github.com/kanthe94/portfolio',
+          href: 'https://github.com/kanthe94/my-portfolio',
           label: 'GitHub',
           position: 'right',
         },
@@ -37,15 +37,15 @@ module.exports = {
           items: [
             {
               label: 'Wireless Mouse',
-              to: 'docs/wireless-mouse',
+              to: '/wireless-mouse',
             },
             {
               label: 'Extension Cord',
-              to: 'docs/extension-cord',
+              to: '/extension-cord',
             },
             {
               label: 'Doorbell',
-              to: 'docs/doorbell',
+              to: '/doorbell',
             },
           ],
         },
@@ -54,7 +54,7 @@ module.exports = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/kanthe94/portfolio',
+              href: 'https://github.com/kanthe94/my-portfolio',
             },
           ],
         },
