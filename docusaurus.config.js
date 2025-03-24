@@ -33,33 +33,38 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Guides',
+          title: 'Contact Information',
           items: [
             {
-              label: 'Wireless Mouse',
-              to: '/wireless-mouse',
+              label: 'Phone Number: (+91) 9619160088',
+              href:"#"
             },
             {
-              label: 'Extension Cord',
-              to: '/extension-cord',
-            },
-            {
-              label: 'Doorbell',
-              to: '/doorbell',
-            },
+              label: 'Email: ganeshkanthe94@gmail.com',
+              href: 'mailto:ganeshkanthe94@gmail.com',
+            }
           ],
         },
         {
-          title: 'More',
+          title: 'Connect With Me',
           items: [
             {
-              label: 'GitHub',
-              href: 'https://github.com/kanthe94/my-portfolio',
+              label: "LinkedIn",
+              href: 'https://www.linkedin.com/in/ganesh-kanthe',
             },
+            {
+              label: "Facebook",
+              href: 'https://www.facebook.com/people/Ganesh-Kanthe/100008409331712',
+            },
+            {
+              label: "Instagram",
+              href: 'https://www.instagram.com/ganeshkanthe?igsh=MWp1aDNzZHR4b3FiYg==',
+            },
+            
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Portfolio. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} - Built by Ganesh Kanthe`,
     },
   },
   presets: [
