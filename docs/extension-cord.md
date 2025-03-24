@@ -1,6 +1,7 @@
 ---
 id: extension-cord
 title: Extension Cord User Guide
+hide_table_of_contents: true
 ---
 
 ## Overview

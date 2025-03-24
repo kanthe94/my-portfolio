@@ -1,23 +1,61 @@
 import React from 'react';
 import Layout from '@theme/Layout';
-import Link from '@docusaurus/Link';
+import clsx from 'clsx';
+import styles from './index.module.css'; // Import the CSS module
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Import Font Awesome
+import { faMouse, faPlug, faBell, faBasketShopping, faShoppingBag, faShirt, faTShirt, faShop, faTshirt } from '@fortawesome/free-solid-svg-icons'; // Import icons
+
+// Define the guides data
+const guides = [
+  {
+    id: 'wireless-mouse',
+    title: 'Wireless Mouse Guide',
+    description: 'Learn how to use and troubleshoot a wireless mouse.',
+    link: 'wireless-mouse',
+    icon: <FontAwesomeIcon icon={faMouse} />, // Add icon
+  },
+  // {
+  //   id: 'extension-cord',
+  //   title: 'Extension Cord Guide',
+  //   description: 'Understand how to safely use and maintain an extension cord.',
+  //   link: 'extension-cord',
+  //   icon: <FontAwesomeIcon icon={faPlug} />, // Add icon
+  // },
+  // {
+  //   id: 'doorbell',
+  //   title: 'Doorbell Guide',
+  //   description: 'Discover how to install and fix a doorbell.',
+  //   link: 'doorbell',
+  //   icon: <FontAwesomeIcon icon={faBell} />, // Add icon
+  // },
+  {
+    id: 'allen-solly',
+    title: 'Place an Order on Allen Solly',
+    description: 'Learn how to place an order on Allen Solly platform.',
+    link: 'allen-solly',
+    icon: <FontAwesomeIcon icon={faShirt} />, // Add icon
+  },
+];
 
 export default function Home() {
   return (
     <Layout title="Home" description="Simple User Guides for Everyday Products">
-      <main style={{ padding: '2rem', textAlign: 'center' }}>
-        <h1>Welcome to My Portfolio</h1>
-        <p>Explore simple user guides for everyday products.</p>
-        <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem' }}>
-          <Link to="/wireless-mouse" className="button button--primary">
-            Wireless Mouse Guide
-          </Link>
-          <Link to="/extension-cord" className="button button--primary">
-            Extension Cord Guide
-          </Link>
-          <Link to="/doorbell" className="button button--primary">
-            Doorbell Guide
-          </Link>
+      <main className={styles.container}>
+        <h1 className={styles.title}>Welcome to My Portfolio</h1>
+        <p className={styles.subtitle}>Explore simple user guides for everyday products.</p>
+        <div className={styles.grid}>
+          {/* Render the guides as clickable cards */}
+          {guides.map((guide) => (
+            <a
+              key={guide.id}
+              href={guide.link}
+              className={styles.card}
+            >
+              <div className={styles.icon}>{guide.icon}</div>
+              <h2>{guide.title}</h2>
+              <p>{guide.description}</p>
+            </a>
+          ))}
         </div>
       </main>
     </Layout>

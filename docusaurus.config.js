@@ -10,10 +10,10 @@ module.exports = {
   projectName: 'my-portfolio', // GitHub repo name
   themeConfig: {
     navbar: {
-      title: 'My Portfolio',
+      title: 'Ganesh Kanthe Portfolio',
       logo: {
-        alt: 'Logo',
-        src: 'img/logo.svg',
+        alt: 'My Site Logo',
+        src: 'img/ganesh.svg',
       },
       items: [
         // {
@@ -72,8 +72,10 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/', // Set docs as the homepage
+          sidebarPath: undefined,
+          // sidebarCollapsible: false,
+          // sidebarContainer: false,
         },
         blog: false, // Disable blog
         theme: {

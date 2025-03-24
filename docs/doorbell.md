@@ -1,6 +1,7 @@
 ---
 id: doorbell
 title: Doorbell User Guide
+hide_table_of_contents: true
 ---
 
 ## Overview
