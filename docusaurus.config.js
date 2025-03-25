@@ -5,7 +5,7 @@ module.exports = {
   baseUrl: '/my-portfolio/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/ganesh.svg',
   organizationName: 'kanthe94', // GitHub username
   projectName: 'my-portfolio', // GitHub repo name
   themeConfig: {

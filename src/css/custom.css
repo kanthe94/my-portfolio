@@ -169,3 +169,66 @@ img[alt=QG3] {
 img[alt=QG4] {
   width: 1000px;
 }
+
+/* src/css/custom.css */
+
+/* PDF Container */
+.restricted-pdf {
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  margin: 2rem 0;
+}
+
+/* Allow scrolling in iframe */
+.restricted-pdf iframe {
+  width: 100%;
+  height: 100%;
+  pointer-events: auto; /* Re-enable scrolling */
+}
+
+/* Block right-click on the container */
+.restricted-pdf {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Invisible overlay blocks right-click but allows scrolling */
+.restricted-pdf::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  pointer-events: none; /* Crucial - allows clicks to pass through */
+}
+
+/* Context menu blocker */
+.restricted-pdf iframe {
+  pointer-events: auto;
+}
+
+/* SVG Icon Styling */
+.custom-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.125em; /* Matches FontAwesome alignment */
+  margin-right: 0.5rem;
+}
+
+/* Optional: Color control */
+.custom-icon image {
+  filter: var(--ifm-icon-filter); /* Adapts to dark/light mode */
+}
+
+/* Optional: Hover effect */
+/* .custom-icon:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+} */

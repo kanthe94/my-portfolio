@@ -3,17 +3,12 @@ import Layout from '@theme/Layout';
 import clsx from 'clsx';
 import styles from './index.module.css'; // Import the CSS module
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Import Font Awesome
-import { faMouse, faPlug, faBell, faBasketShopping, faShoppingBag, faShirt, faTShirt, faShop, faTshirt } from '@fortawesome/free-solid-svg-icons'; // Import icons
+import { faMouse, faPlug, faBell, faBasketShopping, faShoppingBag, faShirt, faTShirt, faShop, faTshirt, faFilePdf, faBusinessTime, faRobot, faMessage, faHeadphones } from '@fortawesome/free-solid-svg-icons'; // Import icons
+import Instagram from '@theme/Icon/Socials/Instagram';
 
 // Define the guides data
 const guides = [
-  {
-    id: 'wireless-mouse',
-    title: 'Wireless Mouse Guide',
-    description: 'Learn how to use and troubleshoot a wireless mouse.',
-    link: 'wireless-mouse',
-    icon: <FontAwesomeIcon icon={faMouse} />, // Add icon
-  },
+
   // {
   //   id: 'extension-cord',
   //   title: 'Extension Cord Guide',
@@ -28,12 +23,41 @@ const guides = [
   //   link: 'doorbell',
   //   icon: <FontAwesomeIcon icon={faBell} />, // Add icon
   // },
+
   {
     id: 'allen-solly',
     title: 'Place an Order on Allen Solly',
     description: 'Learn how to place an order on Allen Solly platform.',
     link: 'allen-solly',
     icon: <FontAwesomeIcon icon={faShirt} />, // Add icon
+  },
+  {
+    id: 'kafka-streaming',
+    title: 'Kafka Migration Proposal',
+    description: 'Outlines the migration from MQ-based messaging to Apache Kafka.',
+    link: 'kafka-streaming',
+    icon: <FontAwesomeIcon icon={faFilePdf} />,
+  },
+  {
+    id: 'business-instagram',
+    title: 'Instagram for Business',
+    description: 'Strategies to boost brand visibility and customer engagement.',
+    link: 'business-instagram',
+    icon: <FontAwesomeIcon icon={faBusinessTime} />,
+  },
+  {
+    id: 'understanding-chatbots',
+    title: '',
+    description: '',
+    link: 'understanding-chatbots',
+    icon: <FontAwesomeIcon icon={faRobot} />, // Add icon
+  },
+  {
+    id: 'wireless-mouse',
+    title: 'Wireless Mouse Guide',
+    description: 'Learn how to use and troubleshoot a wireless mouse.',
+    link: 'wireless-mouse',
+    icon: <FontAwesomeIcon icon={faMouse} />, // Add icon
   },
 ];
 
