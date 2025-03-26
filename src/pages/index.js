@@ -33,7 +33,7 @@ const guides = [
   },
   {
     id: 'kafka-streaming',
-    title: 'Kafka Migration Proposal',
+    title: 'MQ to Kafka Migration',
     description: 'Outlines the migration from MQ-based messaging to Apache Kafka.',
     link: 'kafka-streaming',
     icon: <FontAwesomeIcon icon={faFilePdf} />,
@@ -47,8 +47,8 @@ const guides = [
   },
   {
     id: 'understanding-chatbots',
-    title: '',
-    description: '',
+    title: 'Chatbots: 24/7 Digital Assistant',
+    description: 'Learn how chatbots work in simple terms.',
     link: 'understanding-chatbots',
     icon: <FontAwesomeIcon icon={faRobot} />, // Add icon
   },
