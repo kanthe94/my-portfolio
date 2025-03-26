@@ -3,7 +3,7 @@ import Layout from '@theme/Layout';
 import clsx from 'clsx';
 import styles from './index.module.css'; // Import the CSS module
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Import Font Awesome
-import { faMouse, faPlug, faBell, faBasketShopping, faShoppingBag, faShirt, faTShirt, faShop, faTshirt, faFilePdf, faBusinessTime, faRobot, faMessage, faHeadphones } from '@fortawesome/free-solid-svg-icons'; // Import icons
+import { faMouse, faPlug, faBell, faBasketShopping, faShoppingBag, faShirt, faTShirt, faShop, faTshirt, faFilePdf, faBusinessTime, faRobot, faMessage, faHeadphones, faVirusCovid } from '@fortawesome/free-solid-svg-icons'; // Import icons
 import Instagram from '@theme/Icon/Socials/Instagram';
 
 // Define the guides data
@@ -58,6 +58,13 @@ const guides = [
     description: 'Learn how to use and troubleshoot a wireless mouse.',
     link: 'wireless-mouse',
     icon: <FontAwesomeIcon icon={faMouse} />, // Add icon
+  },
+  {
+    id: 'covid-growth-reflection',
+    title: 'COVID Growth Reflections', 
+    description: 'Personal and professional lessons from the pandemic era.',
+    link: 'covid-growth-reflection',
+    icon: <FontAwesomeIcon icon={faVirusCovid} />, // Add icon
   },
 ];
 
